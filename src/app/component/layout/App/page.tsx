@@ -1,3 +1,4 @@
+'use client'
 import { loadUser } from "@/app/redux/action/userAction";
 import { AppDispatch } from "@/app/redux/store";
 import { useRouter } from "next/navigation";
