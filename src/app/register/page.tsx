@@ -16,16 +16,8 @@ import { useDispatch } from "react-redux";
 import { AppDispatch } from "../redux/store";
 import { register } from "../redux/action/userAction";
 import { useRouter } from "next/navigation";
+import fileUploadCss from "../fileupload";
 
-export const fileUploadCss = {
-  curesor: "pointer",
-  marginLeft: "-5%",
-  width: "110%",
-  // height: "120%",
-  color: "#ECC94B",
-  backgroundColor: "white",
-  border: "none",
-};
 
 const Page = () => {
   const [email, setEmail] = useState("");

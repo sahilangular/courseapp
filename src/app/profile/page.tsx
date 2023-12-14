@@ -22,7 +22,6 @@ import {
 } from "@chakra-ui/react";
 import Link from "next/link";
 import { RiDeleteBin7Fill } from "react-icons/ri";
-import { fileUploadCss } from "../register/page";
 import { useDispatch, useSelector } from "react-redux";
 import Loader from "../../app/component/layout/Loader/page";
 import UploadWidget from "../cloudinary/uploadwidget";
@@ -31,6 +30,7 @@ import { updateProfilePicture } from "../redux/action/profileAction";
 import { cancelSubscription, loadUser } from "../redux/action/userAction";
 import toast from "react-hot-toast";
 import { removeFromPlayList } from "../redux/action/course";
+import fileUploadCss from "../fileupload";
 
 const Page = () => {
   const { isOpen, onClose, onOpen } = useDisclosure();

@@ -14,11 +14,11 @@ import {
 } from "@chakra-ui/react";
 import Sidebar from "../Sidebar";
 import UploadWidget from "../../cloudinary/uploadwidget";
-import { fileUploadCss } from "@/app/register/page";
 import { useDispatch, useSelector } from "react-redux";
 import { AppDispatch } from "@/app/redux/store";
 import { createCourse } from "@/app/redux/action/admin";
 import toast from "react-hot-toast";
+import fileUploadCss from "@/app/fileupload";
 
 const Page = () => {
   const [title, setTitle] = useState("");

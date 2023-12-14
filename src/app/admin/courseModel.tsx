@@ -20,13 +20,13 @@ import {
   Textarea,
 } from "@chakra-ui/react";
 import { RiDeleteBin7Fill } from "react-icons/ri";
-import { fileUploadCss } from "../register/page";
 import { useDispatch, useSelector } from "react-redux";
 import UploadWidget from "../cloudinary/uploadwidget";
 import { addCourseLecture } from "../redux/action/admin";
 import { AppDispatch } from "../redux/store";
 import { getCourseLecture } from "../redux/action/course";
 import toast from "react-hot-toast";
+import fileUploadCss from "../fileupload";
 
 const CourseModel = ({
   isOpen,
@@ -212,7 +212,6 @@ function VideoCard({
   lectureId,
   courseId,
   deleteButtonHandler,
-  loading
 }: {
   title: string;
   num: number;
@@ -220,7 +219,6 @@ function VideoCard({
   lectureId: any;
   courseId: Number;
   deleteButtonHandler: any;
-  loading:boolean;
 }) {
   return (
     <Stack
