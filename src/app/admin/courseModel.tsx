@@ -160,7 +160,7 @@ const CourseModel = ({
                     focusBorderColor="yellow"
                   />
                   <UploadWidget onUpload={handleOnUpload}>
-                    {({ open }) => {
+                    {({ open }:any) => {
                       function handleOnClick(e: any) {
                         e.preventDefault();
                         open();

@@ -279,7 +279,7 @@ function ChangePhotoBox({
             <VStack spacing={8}>
               {avatarPreview && <Avatar src={avatarPreview} boxSize={48} />}
               <UploadWidget onUpload={handleOnUpload}>
-                {({ open }) => {
+                {({ open }:any) => {
                   function handleOnClick(e: any) {
                     e.preventDefault();
                     open();

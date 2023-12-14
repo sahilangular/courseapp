@@ -140,7 +140,7 @@ const Page = () => {
             </Select>
 
             <UploadWidget onUpload={handleOnUpload}>
-              {({ open }) => {
+              {({ open }:any) => {
                 function handleOnClick(e: any) {
                   e.preventDefault();
                   open();

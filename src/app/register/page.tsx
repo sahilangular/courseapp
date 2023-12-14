@@ -105,7 +105,7 @@ const Page = () => {
           </Box>
           <Box my={4}>
             <UploadWidget onUpload={handleOnUpload}>
-              {({ open }) => {
+              {({ open }:any) => {
                 function handleOnClick(e: any) {
                   e.preventDefault();
                   open();
