@@ -104,7 +104,7 @@ const Page = () => {
             },
           };
 
-          const razor = window.Razorpay(options);
+          const razor = (window as any).Razorpay(options);
           razor.open();
         } catch (error) {
           console.log(error);
